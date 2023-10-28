@@ -1,17 +1,17 @@
-
 import { useEmailDetails } from "../context/EmailContext";
 import Button from "./Button";
 import EmailInput from "./EmailInput";
 
 export default function LeftSide() {
-
-  const {Subscription,emailId,handleError} = useEmailDetails()
-  function handleClick(){
-    if(!emailId) {
-      handleError()
-      return null
+  const { Subscription, emailId, handleError, handleEmailUpdate } =
+    useEmailDetails();
+  function handleClick() {
+    if (!emailId) {
+      handleError();
+      return null;
     }
-  Subscription()
+    Subscription();
+    handleEmailUpdate(emailId);
   }
   return (
     <div className="sm:w-1/2 sm:h-5/6 w-full h-full px-5 py-3 flex flex-col space-y-4 sm:order-1 order-2">

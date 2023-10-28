@@ -3,6 +3,7 @@ export default function EmailInput() {
   const { emailId, handleEmailUpdate,error } = useEmailDetails();
   function handleSubmit(e){
     e.preventDefault()
+
   }
   return (
     <div>

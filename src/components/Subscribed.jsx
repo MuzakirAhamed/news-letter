@@ -16,7 +16,7 @@ export default function Subscribed() {
         Thanks for Subscribing!
       </p>
       <p className="text-sm">
-        A confirmation email has been sent to
+        A confirmation email has been sent to {" "}
         <span className="font-bold">{emailId}</span>. Please open it and click
         the button inside to confirm your subscription.
       </p>

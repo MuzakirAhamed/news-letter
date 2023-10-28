@@ -18,6 +18,7 @@ export default function EmailProvider({ children }) {
     setSubscribed(!subscribed);
     setEmailId("")
   }
+  console.log(emailId)
   return (
     <EmailContext.Provider
       value={{
